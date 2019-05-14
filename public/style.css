@@ -1,0 +1,67 @@
+body {
+    font-family: 'chivo';
+    background-color: #9EDFDE;
+}
+
+/* --------------------events list--------------------  */
+.eventslist-outer-container {
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    -webkit-box-shadow:16px 10px 68px 11px #000000 ;
+    -moz-box-shadow:16px 10px 68px 11px #000000 ;
+    box-shadow:16px 10px 68px 11px #000000 ;
+}
+
+.eventslist-event-container {
+    border-bottom: solid 1px grey;
+    width: 80vw;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.eventslist-calendar {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.eventslist-calendar-month {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FD9B64;
+}
+
+.eventslist-calendar-day {
+    font-size: 50px;
+    text-align: center;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.eventslist-name {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .eventslist-outer-container {
+        width:70vw;
+    }
+
+    .eventslist-event-container {
+        width: 60vw;
+    }
+
+    .eventslist-name {
+        font-size: 2em;
+    }
+  }
