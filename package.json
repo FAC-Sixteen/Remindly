@@ -4,7 +4,8 @@
   "description": "Birthday App Reminder",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
+    "devTest": "jest --watchAll",
     "devGo": "nodemon ./src/server"
   },
   "repository": {
