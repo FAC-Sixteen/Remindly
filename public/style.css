@@ -1,0 +1,35 @@
+/* Burhan: Desktop navbar */
+body{
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+nav div a {
+    display: inline-block;
+    color: white;
+    margin: 25px 15px; 
+  }
+
+  nav div a img{
+    height: 35px;
+    width: 35px;   
+  }
+
+  #dnb-homeLink{
+    margin-left: 10px;
+}
+
+#dnb-homeLink a, #dnb-buttons a{
+    cursor: pointer;
+}
+#dnb-homeLink a:hover, #dnb-buttons a:hover{
+    transform: scale(1.1)
+}
