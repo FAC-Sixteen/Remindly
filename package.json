@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "start": "node src/server.js",
     "devTest": "jest --watchAll",
     "devGo": "nodemon ./src/server"
   },
