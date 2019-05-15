@@ -54,6 +54,35 @@ body {
     margin: 20px;
 }
 
+/* ---------------------desktop header--------------------- */
+
+.desktopheader-outer-container {
+    height:50px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktopheader-title {
+    color: white;
+    font-size: 2em;
+}
+
+.desktopheader-filterbtn {
+    height: 20px;
+    padding: 5px;
+    background-color: #FD9B64;
+    display: flex;
+    cursor: pointer;
+}
+
+.desktopheader-filterbtn img {
+    width: 20px;
+}
+
+/* ----------------------media queries--------------------- */
+
 @media only screen and (min-width: 900px) {
     .eventslist-outer-container {
         width:600px;
@@ -82,5 +111,9 @@ body {
 
     .eventslist-name {
         font-size: 1.5em;
+    }
+
+    .desktopheader-outer-container {
+        width:600px;
     }
   }
