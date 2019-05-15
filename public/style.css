@@ -1,4 +1,6 @@
+
 body {
+  margin: 0;
     font-family: 'chivo';
     background-color: #9EDFDE;
 }
@@ -116,4 +118,43 @@ body {
     .desktopheader-outer-container {
         width:600px;
     }
+
+/* Desktop navbar */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  nav div a {
+    display: inline-block;
+    color: white;
+    margin: 20px 15px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  nav div a img{
+    height: 35px;
+    width: 35px; 
+    box-sizing: border-box; 
+  }
+  
+#dnb-homeLink{
+    margin-left: 10px;
+  }
+
+#dnb-homeLink a, #dnb-buttons a{
+    cursor: pointer;
+  }
+
+#dnb-homeLink a:hover, #dnb-buttons a:hover{
+    padding-bottom: 2px;
+    border-bottom:  2px solid lightgrey;
+
   }
