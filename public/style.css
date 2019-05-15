@@ -1,0 +1,237 @@
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'chivo';
+    /* background-color: #9EDFDE; */
+    background:
+      linear-gradient(
+        to top, 
+        black 70%,
+        #9edfde 30%
+      );
+    overflow: hidden;
+  }
+
+  /* ---------------------mobile nav--------------------- */
+.mnb-container {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  filter: drop-shadow(0px 1px 13px rgba(0, 0, 0, 0.5));
+  bottom: 0px;
+}
+
+.mnb-borderbottom {
+  display: flex;
+}
+
+.mnb-borderbottom-left {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 100px;
+  background-color: white;
+  border-bottom: 10px solid white;
+}
+
+.mnb-borderbottom-left:hover {
+  border-bottom: 10px solid black;
+}
+
+.mnb-borderbottom-right {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 100px;
+  background-color: white;
+  border-bottom: 10px solid white;
+}
+
+.mnb-borderbottom-right:hover {
+  border-bottom: 10px solid black;
+}
+
+.mnb-ul-addicon-bottom {
+  filter: drop-shadow(1px 5px 4px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  transform:translate(-50%, -50%);
+  left: 50vw;
+}
+
+.mnb-ul-eventsicon-bottom {
+height: 60px;
+margin: auto 0;
+}
+
+.mnb-ul-contactsicon-bottom {
+height: 70px;
+margin: auto 0;
+}
+
+/* --------------------events list--------------------  */
+.eventslist-outer-container {
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    padding:20px;
+    -webkit-box-shadow:37px 3px 76px 3px #000000 ;
+    -moz-box-shadow:37px 3px 76px 3px #000000 ;
+    box-shadow:37px 3px 76px 3px #000000 ;
+}
+
+.eventslist-event-container {
+    border-bottom: solid 1px lightgray;
+    width: 70vw;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.eventslist-calendar {
+    width: 60px;
+    height: 60px;
+    /* margin: 20px; */
+}
+
+.eventslist-calendar-month {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FD9B64;
+}
+
+.eventslist-calendar-day {
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.eventslist-name {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* ---------------------desktop header--------------------- */
+
+.desktopheader-outer-container {
+    height:50px;
+    /* width: 80vw; */
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktopheader-title {
+    color: white;
+    font-size: 2em;
+}
+
+.desktopheader-filterbtn {
+    height: 20px;
+    padding: 5px;
+    background-color: #FD9B64;
+    display: flex;
+    cursor: pointer;
+}
+
+.desktopheader-filterbtn img {
+    width: 20px;
+}
+
+
+/* ---------------------desktop navbar--------------------- */
+
+.dnb-nav-container {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    width: 100vw;
+  }
+  
+  .dnb-homelink a,
+  .dnb-buttons a {
+    display: inline-block;
+    color: white;
+    margin: 20px 15px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .dnb-buttons a img{
+    height: 35px;
+    width: 35px; 
+    box-sizing: border-box; 
+  }
+  
+.dnb-homeLink{
+    margin-left: 10px;
+  }
+
+.dnb-homeLink a, .dnb-buttons a{
+    cursor: pointer;
+  }
+
+.dnb-homeLink a:hover, .dnb-buttons a:hover{
+    padding-bottom: 2px;
+    border-bottom:  2px solid lightgrey;
+
+  }
+
+/* -----------------media queries for desktop view-------------- */
+
+@media only screen and (min-width: 600px) {
+    .dnb-nav-container {
+        display: flex;
+    }
+
+    .mnb-container {
+        display: none;
+    }
+    .eventslist-outer-container {
+        width:60vw;
+    }
+
+    .eventslist-event-container {
+        width: 50vw;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .eventslist-calendar {
+        height: 60px;
+        width: 60px;
+    }
+
+    .eventslist-calendar-month {
+        font-size: 20px;
+    }
+
+    .eventslist-calendar-day {
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .eventslist-name {
+        font-size: 1.5em;
+    }
+
+    .desktopheader-outer-container {
+        /* width:600px; */
+    }
+}
