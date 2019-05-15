@@ -7,11 +7,10 @@ body {
     /* background-color: #9EDFDE; */
     background:
       linear-gradient(
-        to top, 
+        to top,
         black 70%,
         #9edfde 30%
       );
-    overflow: hidden;
   }
 
   /* ---------------------mobile nav--------------------- */
@@ -162,7 +161,7 @@ margin: auto 0;
     font-size: 1.5rem;
     width: 100vw;
   }
-  
+
   .dnb-homelink a,
   .dnb-buttons a {
     display: inline-block;
@@ -171,13 +170,13 @@ margin: auto 0;
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
   }
-  
+
   .dnb-buttons a img{
     height: 35px;
-    width: 35px; 
-    box-sizing: border-box; 
+    width: 35px;
+    box-sizing: border-box;
   }
-  
+
 .dnb-homeLink{
     margin-left: 10px;
   }
