@@ -1,7 +1,126 @@
+
+body {
+  margin: 0;
+    font-family: 'chivo';
+    background-color: #9EDFDE;
+}
+
+/* --------------------events list--------------------  */
+.eventslist-outer-container {
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    padding:20px;
+    -webkit-box-shadow:37px 3px 76px 3px #000000 ;
+    -moz-box-shadow:37px 3px 76px 3px #000000 ;
+    box-shadow:37px 3px 76px 3px #000000 ;
+}
+
+.eventslist-event-container {
+    border-bottom: solid 1px lightgray;
+    width: 70vw;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.eventslist-calendar {
+    width: 60px;
+    height: 60px;
+    /* margin: 20px; */
+}
+
+.eventslist-calendar-month {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FD9B64;
+}
+
+.eventslist-calendar-day {
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.eventslist-name {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* ---------------------desktop header--------------------- */
+
+.desktopheader-outer-container {
+    height:50px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktopheader-title {
+    color: white;
+    font-size: 2em;
+}
+
+.desktopheader-filterbtn {
+    height: 20px;
+    padding: 5px;
+    background-color: #FD9B64;
+    display: flex;
+    cursor: pointer;
+}
+
+.desktopheader-filterbtn img {
+    width: 20px;
+}
+
+/* ----------------------media queries--------------------- */
+
+@media only screen and (min-width: 900px) {
+    .eventslist-outer-container {
+        width:600px;
+    }
+
+    .eventslist-event-container {
+        width: 450px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .eventslist-calendar {
+        height: 60px;
+        width: 60px;
+    }
+
+    .eventslist-calendar-month {
+        font-size: 20px;
+    }
+
+    .eventslist-calendar-day {
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .eventslist-name {
+        font-size: 1.5em;
+    }
+
+    .desktopheader-outer-container {
+        width:600px;
+    }
+
 /* Desktop navbar */
-body{
-    margin: 0;
-  }
+
 
 nav {
     display: flex;
@@ -37,4 +156,5 @@ nav {
 #dnb-homeLink a:hover, #dnb-buttons a:hover{
     padding-bottom: 2px;
     border-bottom:  2px solid lightgrey;
+
   }

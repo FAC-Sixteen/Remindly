@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
-  <title></title>
-</head>
-
-<body>
-  {{> desktopNav }}
-  {{{body}}}
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
+  </head>
+  <body>
+    {{{body}}}
+    {{> desktopNav }}
+    {{> desktopHeader}}
+    {{> eventsList}}
+  </body>
 </html>
+
