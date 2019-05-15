@@ -7,7 +7,9 @@
     "test": "jest",
     "start": "node src/server.js",
     "devTest": "jest --watchAll",
-    "devGo": "nodemon ./src/server"
+    "devGo": "nodemon ./src/server",
+    "testDBbuild": "NODE_ENV=test node src/model/db_build",
+    "dbbuild": "node src/model/db_build"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.0",
     "supertest": "^4.0.2"
