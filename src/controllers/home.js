@@ -1,5 +1,11 @@
+const getEvents = require('../model/queries/getEvents');
+
+
 const home = (req, res) => {
-  res.render('home');
+  getEvents().then(response => {
+    console.log(response)
+    return res.render('home', {'events': response})
+  })
 }
 
 module.exports = home;
