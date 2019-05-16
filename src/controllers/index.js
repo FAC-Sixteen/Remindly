@@ -9,8 +9,13 @@ const router = express.Router();
 const home = require("./home");
 const addContact = require("./addContact");
 
+const postEvent = require('./postEvent');
+
 //routes
 router.get("/", home);
 router.get("/addcontact", addContact);
+
+
+router.post('/postevent', postEvent)
 
 module.exports = router;
