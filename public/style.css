@@ -191,6 +191,40 @@ margin: auto 0;
 
   }
 
+/* ----------------------add contact form---------------------- */
+.addcontact-outer-container {
+  background-color: white;
+  width: 80vw;
+    margin: auto;
+    padding:20px;
+    -webkit-box-shadow:37px 3px 76px 3px #000000 ;
+    -moz-box-shadow:37px 3px 76px 3px #000000 ;
+    box-shadow:37px 3px 76px 3px #000000 ;
+}
+
+.addcontact-outer-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addcontact-outer-container form input {
+  border: none;
+  border-bottom: solid 2px #FD9B64;
+}
+
+.addcontact-eventtype-container {
+  -webkit-box-shadow:4px 2px 11px 1px #000000 ;
+  -moz-box-shadow:4px 2px 11px 1px #000000 ;
+  box-shadow: 4px 2px 11px 1px #000000;
+  padding: 15px;
+}
+
+.btn {
+  background-color: #FD9B64;
+  border: none;
+}
+
 /* -----------------media queries for desktop view-------------- */
 
 @media only screen and (min-width: 600px) {

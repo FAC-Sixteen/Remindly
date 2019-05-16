@@ -1,17 +1,29 @@
-<div class="">
-  Events List
-  {{#each eventslist}}
-  <div class="">
-    {{event_name}}
-  </div>
-  {{/each}}
-</div>
-
-<div class="">
-  Groups List
-  {{#each groupslist}}
-  <div class="">
-    {{group_name}}
-  </div>
-  {{/each}}
+<div class="addcontact-outer-container">
+  <form method="POST" action="/postevent">
+            <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name" required >
+            <br>
+            <input type="text" name="phone" id="phone" placeholder="Contact Number" required >
+            <br>
+            <div class="addcontact-eventtype-container">
+              <select name="eventtype">
+                <option value="" disabled selected>Select Event Type</option>
+                {{#each eventslist}}
+                <option value={{event_name}}>{{event_name}}</option>
+                {{/each}}
+              </select>
+              <br>
+              <input type="date" name="selected-event-date" required>
+            </div>
+            <br>
+            <button type="button" id="add-new-event-button" class="btn">+ new event</button>
+            <br>
+            <select name="grouptype">
+                <option value="" disabled selected>Select Group</option>
+                {{#each groupslist}}
+                <option value={{grou_namep}}>{{group_name}}</option>
+                {{/each}}
+              </select>
+              <br>
+            <button type="submit" id="add-contact-button" class="btn btnsubmit">+ add contact</button>
+  </form>
 </div>
