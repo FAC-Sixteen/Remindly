@@ -1,5 +1,4 @@
-const getEvents = require('../model/queries/getEvents');
-
+const getEvents = require("../model/queries/getEvents");
 
 const home = (req, res) => {
   getEvents().then(response => {
