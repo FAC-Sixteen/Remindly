@@ -3,8 +3,9 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-// const helpers = require('./views/helpers/index');
+const helpers = require('./views/helpers/index');
 const controllers = require('./controllers/index');
+
 
 
 const app = express();
@@ -23,7 +24,7 @@ app.engine(
         layoutsDir: path.join(__dirname, 'views', 'layouts'),
         partialsDir: path.join(__dirname, 'views', 'partials'),
         defaultLayout: 'main',
-        //helpers
+        helpers
     })
 );
 
