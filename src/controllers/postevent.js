@@ -14,7 +14,7 @@ const postEvent = (req, res) => {
   // );
   postNewEvent(event_name, event_date, contact_name, event_monthday);
   postContact(contact_name, phone, group_name)
-    .then(res.redirect("/"))
+    .then(res.redirect(301, "/"))
     .catch(err => console.log(err));
 };
 
