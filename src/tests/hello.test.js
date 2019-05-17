@@ -1,7 +1,8 @@
-const hello = require('./hello');
+// const hello = require('./hello');
 
-describe('hello', () => {
-    it('should output byebye', () => {
-        expect(hello()).toBe('byebye');
-    });
-});
+// describe('hello', () => {
+//     it('should output byebye', () => {
+//         expect(hello()).toBe('byebye');
+//         document()
+//     });
+// });
