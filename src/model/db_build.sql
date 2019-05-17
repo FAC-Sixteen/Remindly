@@ -42,15 +42,18 @@ CREATE TABLE events (
   id SERIAL PRIMARY KEY,
   event_name VARCHAR NOT NULL,
   event_date DATE NOT NULL,
-  contact_name VARCHAR NOT NULL
+  contact_name VARCHAR NOT NULL,
+  event_monthday VARCHAR NOT NULL
 );
 
-INSERT INTO events (event_name, event_date, contact_name)
+INSERT INTO events (event_name, event_date, contact_name, event_monthday)
 VALUES
-    ('Birthday', '1991-01-10', 'James Levine'),
-    ('Anniversary', '2015-06-07', 'James Levine'),
-    ('Birthday', '1996-09-14', 'Sylvia Hoang'),
-    ('Birthday', '1990-11-23', 'Burhan Baalwaan'),
-    ('Anniversary', '2018-07-21', 'Burhan Baalwaan');
+    ('Birthday', '1991-01-10', 'James Levine', '0110'),
+    ('Anniversary', '2015-06-07', 'James Levine', '0607'),
+    ('Birthday', '1996-09-14', 'Sylvia Hoang', '0914'),
+    ('Birthday', '1990-11-23', 'Burhan Baalwaan', '1123'),
+    ('Anniversary', '2018-07-21', 'Burhan Baalwaan', '0721'),
+    ('Birthday', '2019-11-23', 'Burhan Baalwaan', '1123'),
+    ('Anniversary', '2019-07-21', 'Burhan Baalwaan', '0721');
 
 COMMIT;
