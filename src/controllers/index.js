@@ -9,7 +9,7 @@ const router = express.Router();
 const home = require("./home");
 const addContact = require("./addContact");
 
-const postEvent = require('./postEvent');
+const postEvent = require('./postevent');
 
 //routes
 router.get("/", home);
