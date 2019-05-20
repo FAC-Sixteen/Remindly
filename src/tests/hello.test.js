@@ -1,7 +1,7 @@
 const hello = require('./hello');
 
 describe('hello', () => {
-    it('should output byebye', () => {
+    test('should output byebye', () => {
         expect(hello()).toBe('byebye');
     });
 });
