@@ -8,14 +8,14 @@ describe('jest is working', () => {
     });
 });
 
-// describe('testing home route status code', () => {
-//   test('It should respond with status code 200', (done) => {
-//          request(app).get('/').then((response) => {
-//              expect(response.statusCode).toBe(200);
-//              done();
-//          });
-//      });
-// });
+describe('testing home route status code', () => {
+    test('It should respond with status code 200', (done) => {
+        request(app).get('/').then((response) => {
+            expect(response.statusCode).toBe(200);
+            done();
+        });
+    });
+});
 
 // describe('testing home route content type', () => {
 //   test('It should respond with content type text', (done) => {
