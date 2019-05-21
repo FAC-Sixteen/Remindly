@@ -1,0 +1,18 @@
+<div class="desktopheader-outer-container">
+    <div class="desktopheader-title">Upcoming Events</div>
+    <div class="desktopheader-filterbtn">
+        <img src="./assets/icons8-slider-96.png" alt="slider img">
+        <div class="desktopheader-filterbtn-text"> Filter</div>
+    </div>
+</div>
+<div class="eventslist-outer-container">
+    {{#each events}}
+    <div class="eventslist-event-container">
+        <div class="eventslist-calendar">
+            <div class="eventslist-calendar-month">{{monthFormat event_date}}</div>
+            <div class="eventslist-calendar-day">{{dateFormat event_date}}</div>
+        </div>
+        <div class="eventslist-name">{{contact_name}}'s {{event_name}}</div>
+    </div>
+    {{/each}}
+</div>

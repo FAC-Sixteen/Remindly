@@ -1,19 +1,13 @@
-
 body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    font-family: 'chivo';
-    /* background-color: #9EDFDE; */
-    background:
-      linear-gradient(
-        to top,
-        black 70%,
-        #9edfde 30%
-      );
-  }
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "chivo";
+  /* background-color: #9EDFDE; */
+  background: linear-gradient(to top, black 70%, #9edfde 30%);
+}
 
-  /* ---------------------mobile nav--------------------- */
+/* ---------------------mobile nav--------------------- */
 .mnb-container {
   width: 100vw;
   height: auto;
@@ -56,152 +50,157 @@ body {
 .mnb-ul-addicon-bottom {
   filter: drop-shadow(1px 5px 4px rgba(0, 0, 0, 0.5));
   position: absolute;
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50vw;
   width: 80px;
 }
 
 .mnb-ul-eventsicon-bottom {
-height: 30px;
-margin: auto 0;
+  height: 30px;
+  margin: auto 0;
 }
 
 .mnb-ul-contactsicon-bottom {
-height: 35px;
-margin: auto 0;
+  height: 35px;
+  margin: auto 0;
 }
 
 /* --------------------events list--------------------  */
 .eventslist-outer-container {
-    background-color: white;
-    width: 80vw;
-    margin: auto;
-    padding:20px;
-    -webkit-box-shadow:37px 3px 76px 3px #000000 ;
-    -moz-box-shadow:37px 3px 76px 3px #000000 ;
-    box-shadow:37px 3px 76px 3px #000000 ;
+  background-color: white;
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+  -webkit-box-shadow: 37px 3px 76px 3px #000000;
+  -moz-box-shadow: 37px 3px 76px 3px #000000;
+  box-shadow: 37px 3px 76px 3px #000000;
 }
 
 .eventslist-event-container {
-    border-bottom: solid 1px lightgray;
-    width: 70vw;
-    height: 80px;
-    margin: auto;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  border-bottom: solid 1px lightgray;
+  width: 70vw;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .eventslist-calendar {
-    width: 60px;
-    height: 60px;
-    /* margin: 20px; */
+  width: 60px;
+  height: 60px;
+  /* margin: 20px; */
 }
 
 .eventslist-calendar-month {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #FD9B64;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fd9b64;
 }
 
 .eventslist-calendar-day {
-    height: 40px;
-    font-size: 25px;
-    text-align: center;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
-    border-bottom: solid 1px black;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
 }
 
 .eventslist-name {
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
 }
 
 /* ---------------------desktop header--------------------- */
 
 .desktopheader-outer-container {
-    height:50px;
-    /* width: 80vw; */
-    padding: 40px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  height: 50px;
+  /* width: 80vw; */
+  padding: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .desktopheader-title {
-    color: white;
-    font-size: 2em;
+  color: white;
+  font-size: 2em;
 }
 
 .desktopheader-filterbtn {
-    height: 20px;
-    padding: 5px;
-    background-color: #FD9B64;
-    display: flex;
-    cursor: pointer;
+  height: 20px;
+  padding: 5px;
+  background-color: #fd9b64;
+  display: flex;
+  cursor: pointer;
 }
 
 .desktopheader-filterbtn img {
-    width: 20px;
+  width: 20px;
 }
 
+.homepage-home-link {
+  text-decoration: none;
+  color: #fd9b64;
+}
 
 /* ---------------------desktop navbar--------------------- */
 
 .dnb-nav-container {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-size: 1.5rem;
-    width: 100vw;
-    height: 60px;
-  }
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  width: 100vw;
+  height: 60px;
+}
 
-  .dnb-homelink a,
-  .dnb-buttons a {
-    display: inline-block;
-    color: white;
-    margin: 20px 15px;
-    padding-bottom: 3px;
-    border-bottom: 2px solid transparent;
-  }
+.dnb-homelink a,
+.dnb-buttons a {
+  display: inline-block;
+  color: white;
+  margin: 20px 15px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
 
-  .dnb-buttons a img{
-    height: 25px;
-    width: 25px;
-    box-sizing: border-box;
-  }
+.dnb-buttons a img {
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box;
+}
 
-.dnb-homeLink{
-    margin-left: 10px;
-  }
+.dnb-homeLink {
+  margin-left: 10px;
+}
 
-.dnb-homeLink a, .dnb-buttons a{
-    cursor: pointer;
-  }
+.dnb-homeLink a,
+.dnb-buttons a {
+  cursor: pointer;
+}
 
-.dnb-homeLink a:hover, .dnb-buttons a:hover{
-    padding-bottom: 2px;
-    border-bottom:  2px solid lightgrey;
-
-  }
+.dnb-homeLink a:hover,
+.dnb-buttons a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid lightgrey;
+}
 
 /* ----------------------add contact form---------------------- */
 .addcontact-outer-container {
   background-color: white;
   width: 80vw;
-    margin: auto;
-    padding:20px;
-    -webkit-box-shadow:37px 3px 76px 3px #000000 ;
-    -moz-box-shadow:37px 3px 76px 3px #000000 ;
-    box-shadow:37px 3px 76px 3px #000000 ;
+  margin: auto;
+  padding: 20px;
+  -webkit-box-shadow: 37px 3px 76px 3px #000000;
+  -moz-box-shadow: 37px 3px 76px 3px #000000;
+  box-shadow: 37px 3px 76px 3px #000000;
 }
 
 .addcontact-outer-container form {
@@ -212,58 +211,154 @@ margin: auto 0;
 
 .addcontact-outer-container form input {
   border: none;
-  border-bottom: solid 2px #FD9B64;
+  border-bottom: solid 2px #fd9b64;
 }
 
 .addcontact-eventtype-container {
-  -webkit-box-shadow:4px 2px 11px 1px #000000 ;
-  -moz-box-shadow:4px 2px 11px 1px #000000 ;
+  -webkit-box-shadow: 4px 2px 11px 1px #000000;
+  -moz-box-shadow: 4px 2px 11px 1px #000000;
   box-shadow: 4px 2px 11px 1px #000000;
   padding: 15px;
 }
 
 .btn {
-  background-color: #FD9B64;
+  background-color: #fd9b64;
   border: none;
 }
 
 /* -----------------media queries for desktop view-------------- */
 
 @media only screen and (min-width: 600px) {
-    .dnb-nav-container {
-        display: flex;
-    }
+  .dnb-nav-container {
+    display: flex;
+  }
 
-    .mnb-container {
-        display: none;
-    }
-    .eventslist-outer-container {
-        width:60vw;
-    }
+  .mnb-container {
+    display: none;
+  }
+  .eventslist-outer-container {
+    width: 60vw;
+  }
 
-    .eventslist-event-container {
-        width: 50vw;
-        height: 100px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  .eventslist-event-container {
+    width: 50vw;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    .eventslist-calendar {
-        height: 60px;
-        width: 60px;
-    }
+  .eventslist-calendar {
+    height: 60px;
+    width: 60px;
+  }
 
-    .eventslist-calendar-month {
-        font-size: 20px;
-    }
+  .eventslist-calendar-month {
+    font-size: 20px;
+  }
 
-    .eventslist-calendar-day {
-        height: 40px;
-        font-size: 25px;
-    }
+  .eventslist-calendar-day {
+    height: 40px;
+    font-size: 25px;
+  }
 
-    .eventslist-name {
-        font-size: 1.5em;
-    }
+  .eventslist-name {
+    font-size: 1.5em;
+  }
+}
 
+/*  Login form */
+
+/* Bordered form */
+.login-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.form-container {
+  width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 100%;
+  }
 }
