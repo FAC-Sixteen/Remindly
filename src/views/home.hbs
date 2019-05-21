@@ -1,18 +1,16 @@
-<div class="desktopheader-outer-container">
-    <div class="desktopheader-title">Upcoming Events</div>
-    <div class="desktopheader-filterbtn">
-        <img src="./assets/icons8-slider-96.png" alt="slider img">
-        <div class="desktopheader-filterbtn-text"> Filter</div>
-    </div>
-</div>
-<div class="eventslist-outer-container">
-    {{#each events}}
-    <div class="eventslist-event-container">
-        <div class="eventslist-calendar">
-            <div class="eventslist-calendar-month">{{monthFormat event_date}}</div>
-            <div class="eventslist-calendar-day">{{dateFormat event_date}}</div>
-        </div>
-        <div class="eventslist-name">{{contact_name}}'s {{event_name}}</div>
-    </div>
-    {{/each}}
+<div class="login-form-container">
+<form class="form-container" action="action_page.php">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+  </div>
+  <!-- <div class="container" style="background-color:#f1f1f1"> -->
+    <span class="psw">Don't have an account yet? <a href="/register">Register</a></span>
+  <!-- </div> -->
+</form>
 </div>
