@@ -2,6 +2,14 @@ const request = require('supertest');
 
 const app = require('../app');
 
+// const db = require('')s
+
+afterAll(async done => {
+    // Closing the DB connection allows Jest to exit successfully.
+    db.close();
+    done();
+});
+
 describe('jest is working', () => {
     it('should be showing James', () => {
         expect('James').toBe('James');
