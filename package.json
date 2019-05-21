@@ -4,7 +4,7 @@
   "description": "Birthday App Reminder",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "NODE_ENV=test jest",
     "start": "node src/server.js",
     "devTest": "jest --watchAll",
     "devGo": "nodemon ./src/server",
