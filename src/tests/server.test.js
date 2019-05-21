@@ -2,9 +2,6 @@ const request = require('supertest');
 
 const app = require('../app');
 
-afterAll(async () => {
-    await app.close()
-})
 
 describe('jest is working', () => {
   it('should be showing James', () => {
