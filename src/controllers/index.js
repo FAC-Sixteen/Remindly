@@ -13,6 +13,7 @@ const addContact = require("./addContact");
 const events = require("./events");
 const contacts = require("./contacts");
 const postEvent = require("./postevent");
+// const checkUser = require('./checkUser');
 
 //routes
 router.get("/", home);
@@ -21,6 +22,8 @@ router.get("/register", register);
 router.get("/events", events);
 router.get("/addcontact", addContact);
 router.get("/contacts", contacts);
+
 router.post("/postevent", postEvent);
+// router.post("/login", checkUser);
 
 module.exports = router;

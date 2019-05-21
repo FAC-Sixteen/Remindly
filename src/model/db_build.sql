@@ -56,4 +56,21 @@ VALUES
     ('Birthday', '2019-11-23', 'Burhan Baalwaan', '1123'),
     ('Anniversary', '2019-07-21', 'Burhan Baalwaan', '0721');
 
+    INSERT INTO contacts (name, phone, group_name)
+VALUES
+    ('James Levine', '+4407590060709', 'Friends'),
+    ('Sylvia Hoang', '+4407564498909', 'Family'),
+    ('Burhan Baalwaan', '+4407564498111', 'Family');
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR NOT NULL,
+  last_name VARCHAR NOT NULL,
+  mobile_number VARCHAR NOT NULL,
+  email VARCHAR NOT NULL,
+  hashed_password VARCHAR NOT NULL
+);
+
+INSERT INTO users (first_name,last_name, mobile_number, email, hashed_password) VALUES ('Bob', 'Billibob', '123456789', 'abc123@hotmail.com', 'pass');
+
 COMMIT;
