@@ -1,9 +1,12 @@
 const db = require("../db_connection");
 
 const getUser = email_address => {
-  db.query("SELECT * FROM users WHERE email=$1", [email_address])
-    .then(response => console.log(response.rows))
-    .catch(err => console.log("Error: ", err));
+  return db.query("SELECT * FROM users WHERE email=$1", [email_address])
+    .then(response => response.rows)
+    // > 0 ? response.rows[0] : console.log("email not found"))
+    .catch(err => reject("Error: ", err));
+  
+  
 };
 
 module.exports = getUser;
