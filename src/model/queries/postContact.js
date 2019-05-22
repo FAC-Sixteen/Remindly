@@ -1,17 +1,17 @@
 const db = require('../db_connection');
 
-const postContact = (name, phone, group_name) => {
+const postContact = (name, phone, group_name, email) => {
     return new Promise((resolve, reject) => {
         db
-        .query(
-            "INSERT INTO contacts (name, phone, group_name) VALUES ($1, $2, $3)", [name, phone, group_name]
-        )
-        .then(response => {
-            console.log("new contact added to contact table");
-            resolve(true);
-        })
-        .catch(err => reject(err));
-});
+            .query(
+                "INSERT INTO contacts (name, phone, group_name, user_email) VALUES ($1, $2, $3, $4)", [name, phone, group_name, email]
+            )
+            .then(response => {
+                console.log("new contact added to contact table");
+                resolve(true);
+            })
+            .catch(err => reject(err));
+    });
 }
 module.exports = postContact;
 
