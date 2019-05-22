@@ -1,6 +1,7 @@
 //modules
 const express = require("express");
 const path = require("path");
+const passport = require("passport");
 
 //initialising router
 const router = express.Router();
@@ -13,6 +14,7 @@ const addContact = require("./addContact");
 const events = require("./events");
 const contacts = require("./contacts");
 const postEvent = require("./postevent");
+const loginCheck = require("./loginCheck");
 
 //routes
 router.get("/", home);
@@ -22,5 +24,7 @@ router.get("/events", events);
 router.get("/addcontact", addContact);
 router.get("/contacts", contacts);
 router.post("/postevent", postEvent);
+
+router.post("/login-form", loginCheck);
 
 module.exports = router;
