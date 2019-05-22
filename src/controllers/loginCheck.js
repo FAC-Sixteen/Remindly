@@ -13,7 +13,7 @@ const loginCheck = (req, res) => {
       bcrypt.compare(password, response[0].hashed_pass, (err, resp) => {
         if (resp) {
           console.log("JWT signing here");
-          const token = jwt.sign({ loggedin: true }, process.env.SECRET);
+          const token = jwt.sign({ loggedin: true, user_email: email }, process.env.SECRET);
           console.log(token);
           res.writeHead(302, {
             "set-cookie": `remindly=${token}; max-age=9000; HttpOnly`,
