@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS events CASCADE;
 DROP TABLE IF EXISTS contacts CASCADE;
 DROP TABLE IF EXISTS group_list CASCADE;
 DROP TABLE IF EXISTS event_list CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
 CREATE TABLE group_list (
   id SERIAL PRIMARY KEY,
@@ -55,5 +56,18 @@ VALUES
     ('Anniversary', '2018-07-21', 'Burhan Baalwaan', '0721'),
     ('Birthday', '2019-11-23', 'Burhan Baalwaan', '1123'),
     ('Anniversary', '2019-07-21', 'Burhan Baalwaan', '0721');
+
+CREATE TABLE users (
+      id SERIAL PRIMARY KEY,
+      first_name VARCHAR NOT NULL,
+      last_name VARCHAR NOT NULL,
+      mobile_number VARCHAR NOT NULL,
+      email VARCHAR NOT NULL,
+      hashed_pass VARCHAR NOT NULL
+);
+
+INSERT INTO users (first_name, last_name, mobile_number, email, hashed_pass)
+VALUES
+    ('James', 'Limbo', '12345678', 'abc123@gmail.com', 'pass');
 
 COMMIT;
