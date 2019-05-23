@@ -1,29 +1,39 @@
 <div class="addcontact-outer-container">
   <form method="POST" action="/postevent">
-            <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name" required >
-            <br>
-            <input type="text" name="phone" id="phone" placeholder="Contact Number" required >
-            <br>
-            <div class="addcontact-eventtype-container">
-              <select name="event_name">
-                <option value="" disabled selected>Select Event Type</option>
-                {{#each eventslist}}
-                <option value={{event_name}}>{{event_name}}</option>
-                {{/each}}
-              </select>
-              <br>
-              <input type="date" name="event_date" required>
-            </div>
-            <br>
-            <button type="button" id="add-new-event-button" class="btn">+ new event</button>
-            <br>
-            <select name="group_name">
-                <option value="" disabled selected>Select Group</option>
-                {{#each groupslist}}
-                <option value={{group_name}}>{{group_name}}</option>
-                {{/each}}
-              </select>
-              <br>
-            <button type="submit" id="add-contact-button" class="btn btnsubmit">+ add contact</button>
+    <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name" required>
+    <br>
+    <input type="text" name="phone" id="phone" placeholder="Contact Number" required>
+    <br>
+    <div class="addcontact-eventtype-container">
+      <select name="event_name">
+        <option value="" disabled selected>Select Event Type</option>
+        {{#each eventslist}}
+        <option value={{event_name}}>{{event_name}}</option>
+        {{/each}}
+      </select>
+      <br>
+      <input type="date" name="event_date" required>
+    </div>
+    <br>
+    <button type="button" id="add-new-event-button" class="btn">+ new event</button>
+    <br>
+    <select name="group_name">
+      <option value="" disabled selected>Select Group</option>
+      {{#each groupslist}}
+      <option value={{group_name}}>{{group_name}}</option>
+      {{/each}}
+    </select>
+    <button class="btn" id="customgroupbtn">+ create custom group</button>
+    <br>
+    <button type="submit" id="add-contact-button" class="btn btnsubmit">+ add contact</button>
   </form>
+  <div class="addcontact-customgroup-modal">
+    <div class="addcontact-customgroup-modal-contents">
+      <span class="addcontact-customgroup-modal-close">&times;</span>
+      <form method="POST" action="/postgroup">
+        <input type="text" name="custom_group_name" id="custom_group_name" placeholder="Custom group name">
+        <button type="submit" id="custom_group_button" class="btn">create group</button>
+      </form>
+    </div>
+  </div>
 </div>
