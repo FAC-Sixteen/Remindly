@@ -7,6 +7,10 @@ body {
   background: linear-gradient(to top, black 70%, #9edfde 30%);
 }
 
+.error-message{
+ color: red;
+}
+
 /* ---------------------mobile nav--------------------- */
 .mnb-container {
   width: 100vw;
@@ -279,6 +283,7 @@ body {
 /* -----------------media queries for desktop view-------------- */
 
 @media only screen and (min-width: 600px) {
+
   .dnb-nav-container {
     display: flex;
   }
@@ -420,6 +425,7 @@ span.psw {
 } */
 
 @media only screen and (min-width: 600px) {
+
   .form-container {
     position: fixed;
     top: 50%;

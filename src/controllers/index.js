@@ -30,11 +30,11 @@ router.get("/addcontact", addContact);
 router.get("/contacts", contacts);
 router.get("/logout", logout);
 
-router.get("*", function(req, res) {
+router.get("*", function (req, res) {
   res.send("This is a 404 error. Page not found!", 404);
 });
 
-router.get("*", function(req, res) {
+router.get("*", function (req, res) {
   res.send("This is a server error", 500);
 });
 
