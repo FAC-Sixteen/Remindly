@@ -2,6 +2,7 @@ const postUser = require('../model/queries/postUser');
 const bcrypt = require('bcryptjs');
 
 const validate = require('./validate');
+const validationQuery = require('../model/queries/validationQuery');
 
 const postRegister = (req, res) => {
     const { first_name, last_name, mobile_number, email, password, password_confirm } = req.body;
