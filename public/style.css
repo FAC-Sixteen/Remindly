@@ -23,28 +23,29 @@ body {
 .mnb-borderbottom-left {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50vw;
-  height: 60px;
+  height: 30px;
   background-color: white;
-  border-bottom: 10px solid white;
+  border-bottom: 2px solid white;
 }
 
 .mnb-borderbottom-left:hover {
-  border-bottom: 10px solid black;
+  border-bottom: 2px solid black;
 }
 
 .mnb-borderbottom-right {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 50vw;
-  height: 60px;
+  height: 30px;
   background-color: white;
-  border-bottom: 10px solid white;
+  border-bottom: 2px solid white;
 }
 
 .mnb-borderbottom-right:hover {
-  border-bottom: 10px solid black;
+  border-bottom: 2px solid black;
 }
 
 .mnb-ul-addicon-bottom {
@@ -52,17 +53,17 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50vw;
-  width: 80px;
+  width: 50px;
 }
 
 .mnb-ul-eventsicon-bottom {
-  height: 30px;
-  margin: auto 0;
+  height: 20px;
+  margin: auto;
 }
 
 .mnb-ul-contactsicon-bottom {
-  height: 35px;
-  margin: auto 0;
+  height: 30px;
+  margin: auto;
 }
 
 /* --------------------events list--------------------  */
@@ -269,18 +270,16 @@ body {
 /*  Login form */
 
 /* Bordered form */
-.login-form-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.login-form-container-main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .form-container {
   width: 400px;
   background-color: white;
-  padding: 30px;
+  padding: 0px;
   border-radius: 10px;
 }
 
@@ -360,5 +359,23 @@ span.psw {
 @media only screen and (max-width: 600px) {
   .form-container {
     width: 100%;
+  }
+}
+
+/* .login-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+@media only screen and (min-width: 600px) {
+  .form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
