@@ -16,6 +16,7 @@ const postEvent = require("./postevent");
 const loginCheck = require("./loginCheck");
 const postRegister = require("./postRegister");
 const postGroup = require("./postGroup");
+const logout = require("./logout");
 
 //routes
 router.get("/", home);
@@ -24,6 +25,7 @@ router.get("/register", register);
 router.get("/events", events);
 router.get("/addcontact", addContact);
 router.get("/contacts", contacts);
+router.get("/logout", logout);
 
 router.get("*", function(req, res) {
   res.send("This is a 404 error. Page not found!", 404);
