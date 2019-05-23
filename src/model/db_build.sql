@@ -8,23 +8,25 @@ DROP TABLE IF EXISTS users CASCADE;
 
 CREATE TABLE group_list (
   id SERIAL PRIMARY KEY,
-  group_name VARCHAR NOT NULL
+  group_name VARCHAR NOT NULL,
+  user_email VARCHAR NOT NULL
 );
 
-INSERT INTO group_list (group_name)
+INSERT INTO group_list (group_name, user_email)
 VALUES
-    ('Friends'),
-    ('Family');
+    ('Friends', 'abc123@gmail.com'),
+    ('Family', 'abc123@gmail.com');
 
 CREATE TABLE event_list (
   id SERIAL PRIMARY KEY,
-  event_name VARCHAR NOT NULL
+  event_name VARCHAR NOT NULL,
+  user_email VARCHAR NOT NULL
 );
 
-INSERT INTO event_list (event_name)
+INSERT INTO event_list (event_name, user_email)
 VALUES
-    ('Birthday'),
-    ('Anniversary');
+    ('Birthday', 'abc123@gmail.com'),
+    ('Anniversary', 'abc123@gmail.com');
 
 CREATE TABLE contacts (
   id SERIAL PRIMARY KEY,
