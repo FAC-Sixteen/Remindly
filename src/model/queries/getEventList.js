@@ -1,6 +1,6 @@
 const db = require("../db_connection");
-const getEventList = () => {
-  return db.query("SELECT * FROM event_list").then(response => {
+const getEventList = (email) => {
+  return db.query("SELECT * FROM event_list WHERE user_email = $1", [email]).then(response => {
     return response.rows;
   });
 };

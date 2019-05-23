@@ -1,10 +1,11 @@
-const postUser = require('../model/queries/postUser');
-const bcrypt = require('bcryptjs');
+const postUser = require("../model/queries/postUser");
+const bcrypt = require("bcryptjs");
 
 const validate = require('./validate');
 const validationQuery = require('../model/queries/validationQuery');
 
 const postRegister = (req, res) => {
+  
     const { first_name, last_name, mobile_number, email, password, password_confirm } = req.body;
 
     validationQuery(email)
@@ -30,6 +31,7 @@ const postRegister = (req, res) => {
                 res.render('register', { message: 'Email Already exists' });
             }
         }).catch(err => console.log('This is error:', err));
+
 };
 
 module.exports = postRegister;
