@@ -225,8 +225,8 @@ body {
   background-color: #fd9b64;
   border: none;
 }
-/* -----------------groups modal styling----------------- */
-.addcontact-customgroup-modal {
+/* -----------------groups and event modal styling----------------- */
+.addcontact-customgroup-modal, .addcontact-customevent-modal {
   display: none;
   position: fixed;
   background-color: rgba(0,0,0,0.4);
@@ -237,14 +237,14 @@ body {
   left:0;
 }
 
-.addcontact-customgroup-modal-contents {
+.addcontact-customgroup-modal-contents, .addcontact-customevent-modal-contents  {
   width: 80vw;
   margin: auto;
   margin-top: 100px;
   background-color: white;
 }
 
-.addcontact-customgroup-modal-close {
+.addcontact-customgroup-modal-close, .addcontact-customevent-modal-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -253,7 +253,9 @@ body {
 }
 
 .addcontact-customgroup-modal-close:hover,
-.addcontact-customgroup-modal-close:focus {
+.addcontact-customgroup-modal-close:focus,
+.addcontact-customevent-modal-close:hover,
+.addcontact-customevent-modal-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

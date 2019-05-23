@@ -16,6 +16,7 @@ const postEvent = require("./postevent");
 const loginCheck = require("./loginCheck");
 const postRegister = require("./postRegister");
 const postGroup = require("./postGroup");
+const postEventList = require("./postEventList");
 
 //routes
 router.get("/", home);
@@ -26,6 +27,7 @@ router.get("/addcontact", addContact);
 router.get("/contacts", contacts);
 router.post("/postevent", postEvent);
 router.post("/postgroup", postGroup);
+router.post("/posteventlist", postEventList);
 
 router.post("/login-form", loginCheck);
 router.post("/register-form", postRegister);
