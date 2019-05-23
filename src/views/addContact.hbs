@@ -23,6 +23,19 @@
                 <option value={{group_name}}>{{group_name}}</option>
                 {{/each}}
               </select>
+              <div class="addcontact-customgroup-container">
+                <button class="btn" id="customgroupbtn">+ create custom group</button>
+                <div class="addcontact-customgroup-modal">
+                  <div class="addcontact-customgroup-modal-contents">
+                    <span class="addcontact-customgroup-modal-close">&times;</span>
+                    <form>
+                      <input type="text" name="custom_group_name" id="custom_group_name" placeholder="Custom group name">
+                      <button type="submit" id="custom_group_button" class="btn">create group</button>
+                    </form>
+                  </div>
+                  
+                </div>
+              </div>
               <br>
             <button type="submit" id="add-contact-button" class="btn btnsubmit">+ add contact</button>
   </form>
