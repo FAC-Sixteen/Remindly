@@ -226,6 +226,39 @@ body {
   background-color: #fd9b64;
   border: none;
 }
+/* -----------------groups modal styling----------------- */
+.addcontact-customgroup-modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top:0;
+  left:0;
+}
+
+.addcontact-customgroup-modal-contents {
+  width: 80vw;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+}
+
+.addcontact-customgroup-modal-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.addcontact-customgroup-modal-close:hover,
+.addcontact-customgroup-modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* -----------------media queries for desktop view-------------- */
 
