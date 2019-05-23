@@ -1,7 +1,16 @@
+<nav class="dnb-nav-container">
+    <div class="dnb-homeLink">
+        <a class="homepage-home-link" title="Home" href="/events">Remindly</a>
+    </div>
+    <div class="dnb-buttons">
+        <a class="register-button-link" href="/"><div class="register-button register-button-div">Login</div></a>
+    </div>
+</nav>
 <div class="login-form-container-main">
 <div class="login-form-container">
-<form class="form-container" action="/register-form" method="post">
+<form class="form-container" action="/register-form" method="post" autocomplete="on">
   <div class="container">
+    <p>Please register below.</p>
     <label for="first_name"><b>First Name</b></label>
     <input type="text" placeholder="Enter first name" name="first_name" required>
     <label for="last_name"><b>Last Name</b></label>
@@ -15,7 +24,7 @@
     <label for="password_confirm"><b>Confirm Password</b></label>
     <input type="password" placeholder="Confirm Password" name="password_confirm" required>
 
-    <button type="submit">Login</button>
+    <button type="submit">Register</button>
     <span class="psw">Already have an account? <a href="/">Login</a></span>
   </div>
 </form>
