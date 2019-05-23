@@ -1,32 +1,32 @@
-<div class="login-form-container">
-  <form class="form-container" action="/register-form" method="post">
-    <div class="container">
-      <label for="first_name"><b>First Name</b></label>
-      <input type="text" placeholder="Enter first name" name="first_name"
-        pattern="^(?=.{1,20}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$" required>
-      <label for="last_name"><b>Last Name</b></label>
-      <input type="text" placeholder="Enter last name" name="last_name"
-        pattern="^(?=.{1,20}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$" required>
-      <label for="mobile_number"><b>Mobile Number</b></label>
-      <input type="text" placeholder="Enter mobile number" name="mobile_number"
-        pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$" required>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter email" name="email" pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}" required>
-      <label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password"
-        pattern="(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
-        title="Password MUST be 8-20 characters long. Password should contain letters (at least 1 UPPERCASE and lowercase), numbers and symbols."
-        required>
-      <label for="password_confirm"><b>Confirm Password</b></label>
-      <input type="password" placeholder="Confirm Password" name="password_confirm"
-        pattern="(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
-        title="Password MUST be 8-20 characters long. Password should contain letters (at least 1 UPPERCASE and lowercase), numbers and symbols."
-        required>
+<div class="login-form-container-main">
+  <div class="login-form-container">
+    <form class="form-container" action="/register-form" method="post">
+      <div class="container">
+        <label for="first_name"><b>First Name</b></label>
+        <input type="text" placeholder="Enter first name" name="first_name"
+          pattern="^(?=.{1,20}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$" required>
+        <label for="last_name"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter last name" name="last_name"
+          pattern="^(?=.{1,20}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$" required>
+        <label for="mobile_number"><b>Mobile Number</b></label>
+        <input type="text" placeholder="Enter mobile number" name="mobile_number"
+          pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter email" name="email" pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password"
+          pattern="(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
+          title="Password MUST be 8-20 characters long. Password should contain letters (at least 1 UPPERCASE and lowercase), numbers and symbols."
+          required>
+        <label for="password_confirm"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="password_confirm"
+          pattern="(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
+          title="Password MUST be 8-20 characters long. Password should contain letters (at least 1 UPPERCASE and lowercase), numbers and symbols."
+          required>
 
-      <button id="signup-button" type="submit">Login</button>
-    </div>
-    <!-- <div class="container" style="background-color:#f1f1f1"> -->
-    <span class="psw">Already have an account? <a href="/">Login</a></span>
-    <!-- </div> -->
-  </form>
+        <button type="submit">Login</button>
+        <span class="psw">Already have an account? <a href="/">Login</a></span>
+      </div>
+    </form>
+  </div>
 </div>
