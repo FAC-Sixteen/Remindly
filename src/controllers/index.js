@@ -1,6 +1,7 @@
 //modules
 const express = require("express");
 const path = require("path");
+const flash = require('req-flash');
 
 //initialising router
 const router = express.Router();

@@ -5,6 +5,8 @@ const validationQuery = (email) => {
         .then(response => {
             if (response.rows.length > 0) {
                 throw 'Email already exists in database'
+            } else {
+                return true;
             }
         })
         .catch(err => console.log('Error: ', err));
