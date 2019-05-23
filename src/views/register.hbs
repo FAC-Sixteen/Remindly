@@ -12,19 +12,24 @@
         <input type="text" placeholder="Enter mobile number" name="mobile_number"
           pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$" required>
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter email" name="email" pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}" required>
+        <input type="text" placeholder="Enter email" name="email" title="Email is not in correct format"
+          pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}" required>
         <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password"
+        <input type="password" placeholder="Enter Password" name="password" id="password"
           pattern="(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
           title="Password MUST be 8-20 characters long. Password should contain letters (at least 1 UPPERCASE and lowercase), numbers and symbols."
           required>
         <label for="password_confirm"><b>Confirm Password</b></label>
-        <input type="password" placeholder="Confirm Password" name="password_confirm"
+        <input type="password" placeholder="Confirm Password" name="password_confirm" id="password_confirm"
           pattern="(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
           title="Password MUST be 8-20 characters long. Password should contain letters (at least 1 UPPERCASE and lowercase), numbers and symbols."
           required>
 
-        <button type="submit">Login</button>
+        {{#if message}}
+        <p class="error-message">{{message}}</p>
+        {{/if}}
+
+        <button id="register-button" type="submit">Login</button>
         <span class="psw">Already have an account? <a href="/">Login</a></span>
       </div>
     </form>
