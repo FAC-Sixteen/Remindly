@@ -10,12 +10,17 @@
         </a>
     </div>
 </nav>
+<div class="addcontact-header">Add a new contact</div>
 <div class="addcontact-outer-container">
+  <div class="addcontact-userimg">
+    <img  src="./assets/icons8-customer-96.png" alt="user icon">  
+  </div>
   <form method="POST" action="/postevent">
     <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name" required>
     <br>
     <input type="text" name="phone" id="phone" placeholder="Contact Number" required>
     <br>
+    <div class="addcontact-eventtype-outer-container">
     <div class="addcontact-eventtype-container">
       <select name="event_name">
         <option value="" disabled selected>Select Event Type</option>
@@ -23,20 +28,28 @@
         <option value={{event_name}}>{{event_name}}</option>
         {{/each}}
       </select>
-      <br>
+      <br><br>
       <input type="date" name="event_date" required>
     </div>
-    <button class="btn" id="customeventbtn">+ create custom event</button>
+    <button class="btn" id="customeventbtn">+ create custom event</button>  
+    </div>
+    
     <br>
-    <button type="button" id="add-new-event-button" class="btn">+ new event</button>
+    {{!-- <button type="button" id="add-new-event-button" class="btn">+ new event</button> --}}
     <br>
-    <select name="group_name">
+    <div class="addcontacts-grouptype-outer-container">
+    <div class="addcontacts-grouptype-container">
+      <select name="group_name">
       <option value="" disabled selected>Select Group</option>
       {{#each groupslist}}
       <option value={{group_name}}>{{group_name}}</option>
       {{/each}}
     </select>
-    <button class="btn" id="customgroupbtn">+ create custom group</button>
+   
+    </div>
+     <button class="btn" id="customgroupbtn">+ create custom group</button>
+    </div>
+    
     <br>
     <button type="submit" id="add-contact-button" class="btn btnsubmit">+ add contact</button>
   </form>
