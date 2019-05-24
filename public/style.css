@@ -6,8 +6,8 @@ body {
   background: linear-gradient(to top, black 70%, #9edfde 30%);
 }
 
-.error-message{
- color: red;
+.error-message {
+  color: red;
 }
 
 /* ---------------------mobile nav--------------------- */
@@ -241,7 +241,8 @@ body {
   font-size: 1em;
 }
 
-.addcontact-eventtype-container, .addcontacts-grouptype-container{
+.addcontact-eventtype-container,
+.addcontacts-grouptype-container {
   -webkit-box-shadow: 2px 3px 5px 0px #000000;
   -moz-box-shadow: 2px 3px 5px 0px #000000;
   box-shadow: 2px 3px 5px 0px #000000;
@@ -251,11 +252,11 @@ body {
   text-align: center;
 }
 
-.addcontacts-grouptype-container{
-  height:40px;
+.addcontacts-grouptype-container {
+  height: 40px;
 }
 
-.addcontacts-grouptype-outer-container button{
+.addcontacts-grouptype-outer-container button {
   padding: 0;
 }
 
@@ -283,18 +284,21 @@ body {
   padding: 30px;
 }
 
-.addcontact-eventtype-outer-container, .addcontacts-grouptype-outer-container {
+.addcontact-eventtype-outer-container,
+.addcontacts-grouptype-outer-container {
   display: flex;
 }
 
-.addcontact-eventtype-outer-container button, .addcontacts-grouptype-outer-container button {
+.addcontact-eventtype-outer-container button,
+.addcontacts-grouptype-outer-container button {
   background-color: #ffffff;
   width: 100px;
   margin: 20px;
 }
 
 /* -----------------groups and event modal styling----------------- */
-.addcontact-customgroup-modal, .addcontact-customevent-modal {
+.addcontact-customgroup-modal,
+.addcontact-customevent-modal {
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.4);
@@ -306,15 +310,17 @@ body {
   text-align: center;
 }
 
-.addcontact-customgroup-modal-contents, .addcontact-customevent-modal-contents  {
+.addcontact-customgroup-modal-contents,
+.addcontact-customevent-modal-contents {
   width: 80vw;
   margin: auto;
   margin-top: 100px;
   background-color: white;
-  padding: 30px
+  padding: 30px;
 }
 
-.addcontact-customgroup-modal-close, .addcontact-customevent-modal-close {
+.addcontact-customgroup-modal-close,
+.addcontact-customevent-modal-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -334,7 +340,6 @@ body {
 /* -----------------media queries for desktop view-------------- */
 
 @media only screen and (min-width: 600px) {
-
   .dnb-nav-container {
     display: flex;
   }
@@ -384,7 +389,7 @@ body {
 .form-container {
   width: 400px;
   background-color: white;
-  padding: 0px;
+  padding-bottom: 20px;
 }
 
 /* form {
@@ -487,7 +492,6 @@ span.psw {
 } */
 
 @media only screen and (min-width: 600px) {
-
   .form-container {
     position: fixed;
     top: 50%;
