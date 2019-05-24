@@ -17,6 +17,7 @@
     </div>
 </div>
 <div class="eventslist-outer-container">
+  {{#if events}}
     {{#each events}}
     <div class="eventslist-event-container">
         <div class="eventslist-calendar">
@@ -31,6 +32,11 @@
   {{#each verifyUser}}
     <h1>User verified</h1>
   {{/each}}
+  {{else}}
+  <p>No events have been added. Add a contact and their events
+<a href="/addcontact">here</a>
+  </p>
+  {{/if}}
 </div>
 <nav class="mnb-container">
   <div class="mnb-borderbottom">

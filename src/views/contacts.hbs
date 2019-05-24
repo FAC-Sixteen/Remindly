@@ -17,6 +17,7 @@
     </div>
 </div>
 <div class="eventslist-outer-container">
+  {{#if author}}
     {{#each contacts}}
     <div class="eventslist-event-container">
       <div class="eventslist-usericon">
@@ -26,6 +27,11 @@
         <div class="eventslist-name">{{group_name}}</div>
     </div>
     {{/each}}
+    {{else}}
+    <p>No contacts to show. Add a contact and their events
+<a href="/addcontact">here</a>
+    </p>
+    {{/if}}
 </div>
 <nav class="mnb-container">
   <div class="mnb-borderbottom">
