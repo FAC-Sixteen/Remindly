@@ -1,19 +1,23 @@
 <nav class="dnb-nav-container">
-    <div class="dnb-homeLink">
-        <a class="homepage-home-link" title="Home" href="/events">Remindly</a>
-    </div>
-    <div class="dnb-buttons">
-        <a title="Add Contact" href="/addcontact"><img src="./assets/add-icon.png" alt="add contact icon"></a>
-        <a title="Calendar" href="/events"><img src="./assets/icons8-calendar-11-100 (2).png" alt="calender icon"></a>
-        <a title="Groups" href="/contacts"><img src="./assets/icons8-group-96.png" alt="groups icon"></a>
-        <a class="register-button-link" title="Logout" href="/logout"><div class="register-button register-button-div"><p class="register-button-text">Logout</p></div></a>
-        </a>
-    </div>
+  <div class="dnb-homeLink">
+    <a class="homepage-home-link" title="Home" href="/events">Remindly</a>
+  </div>
+  <div class="dnb-buttons">
+    <a title="Add Contact" href="/addcontact"><img src="./assets/add-icon.png" alt="add contact icon"></a>
+    <a title="Calendar" href="/events"><img src="./assets/icons8-calendar-11-100 (2).png" alt="calender icon"></a>
+    <a title="Groups" href="/contacts"><img src="./assets/icons8-group-96.png" alt="groups icon"></a>
+    <a class="register-button-link" title="Logout" href="/logout">
+      <div class="register-button register-button-div">
+        <p class="register-button-text">Logout</p>
+      </div>
+    </a>
+    </a>
+  </div>
 </nav>
 <div class="addcontact-header">Add a new contact</div>
 <div class="addcontact-outer-container">
   <div class="addcontact-userimg">
-    <img  src="./assets/icons8-customer-96.png" alt="user icon">  
+    <img src="./assets/icons8-customer-96.png" alt="user icon">
   </div>
   <form method="POST" action="/postevent">
     <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name" required>
@@ -21,69 +25,71 @@
     <input type="text" name="phone" id="phone" placeholder="Contact Number" required>
     <br>
     <div class="addcontact-eventtype-outer-container">
-    <div class="addcontact-eventtype-container">
-      <select name="event_name">
-        <option value="" disabled selected>Select Event Type</option>
-        {{#each eventslist}}
-        <option value={{event_name}}>{{event_name}}</option>
-        {{/each}}
-      </select>
-      <br><br>
-      <input type="date" name="event_date" required>
+      <div class="addcontact-eventtype-container">
+        <select name="event_name" required>
+          <option value="" disabled selected>Select Event Type</option>
+          {{#each eventslist}}
+          <option value={{event_name}}>{{event_name}}</option>
+          {{/each}}
+        </select>
+        <br><br>
+        <input type="date" name="event_date" required>
+      </div>
+      <button class="btn" id="customeventbtn">+ create custom event</button>
     </div>
-    <button class="btn" id="customeventbtn">+ create custom event</button>  
-    </div>
-    
+
     <br>
     {{!-- <button type="button" id="add-new-event-button" class="btn">+ new event</button> --}}
     <br>
     <div class="addcontacts-grouptype-outer-container">
-    <div class="addcontacts-grouptype-container">
-      <select name="group_name">
-      <option value="" disabled selected>Select Group</option>
-      {{#each groupslist}}
-      <option value={{group_name}}>{{group_name}}</option>
-      {{/each}}
-    </select>
-   
+      <div class="addcontacts-grouptype-container">
+        <select name="group_name" required>
+          <option value="" disabled selected>Select Group</option>
+          {{#each groupslist}}
+          <option value={{group_name}}>{{group_name}}</option>
+          {{/each}}
+        </select>
+
+      </div>
+      <button class="btn" id="customgroupbtn">+ create custom group</button>
     </div>
-     <button class="btn" id="customgroupbtn">+ create custom group</button>
-    </div>
-    
+
     <br>
     <button type="submit" id="add-contact-button" class="btn btnsubmit">+ add contact</button>
   </form>
 </div>
 <nav class="mnb-container">
   <div class="mnb-borderbottom">
-  <div class="mnb-borderbottom-left">
-    <a href="/events"><img class="mnb-ul-eventsicon-bottom" src="./assets/icons8-calendar-11-100 (2).png" alt="contacts page icon"></a>
-  </div>
-<a href="/addcontact"><img class="mnb-ul-addicon-bottom" src="./assets/add-icon.png" alt="add contact icon"></a>
-  <div class="mnb-borderbottom-right">
-    <a href="/contacts"><img class="mnb-ul-contactsicon-bottom" src="./assets/icons8-group-96.png" alt="contacts page icon"></a>
-  </div>
+    <div class="mnb-borderbottom-left">
+      <a href="/events"><img class="mnb-ul-eventsicon-bottom" src="./assets/icons8-calendar-11-100 (2).png"
+          alt="contacts page icon"></a>
+    </div>
+    <a href="/addcontact"><img class="mnb-ul-addicon-bottom" src="./assets/add-icon.png" alt="add contact icon"></a>
+    <div class="mnb-borderbottom-right">
+      <a href="/contacts"><img class="mnb-ul-contactsicon-bottom" src="./assets/icons8-group-96.png"
+          alt="contacts page icon"></a>
+    </div>
   </div>
 </nav>
-  <div class="addcontact-customgroup-modal">
-    <div class="addcontact-customgroup-modal-contents">
-      <span class="addcontact-customgroup-modal-close">&times;</span>
-      <form method="POST" action="/postgroup">
+<div class="addcontact-customgroup-modal">
+  <div class="addcontact-customgroup-modal-contents">
+    <span class="addcontact-customgroup-modal-close">&times;</span>
+    <form method="POST" action="/postgroup">
       <label for="custom_group_name"><b>Create a custom group!</b></label>
-        <input type="text" name="custom_group_name" id="custom_group_name" placeholder="Custom group name">
-        <button type="submit" id="custom_group_button" class="btn">create group</button>
-      </form>
-    </div>
+      <input type="text" name="custom_group_name" id="custom_group_name" placeholder="Custom group name">
+      <button type="submit" id="custom_group_button" class="btn">create group</button>
+    </form>
   </div>
-  <div class="addcontact-customevent-modal">
-    <div class="addcontact-customevent-modal-contents">
-      <span class="addcontact-customevent-modal-close">&times;</span>
-      <form method="POST" action="/posteventlist">
+</div>
+<div class="addcontact-customevent-modal">
+  <div class="addcontact-customevent-modal-contents">
+    <span class="addcontact-customevent-modal-close">&times;</span>
+    <form method="POST" action="/posteventlist">
       <label for="custom_event_name"><b>Create a custom event!</b></label>
-        <input type="text" name="custom_event_name" id="custom_event_name" placeholder="Custom event name">
-        <button type="submit" id="custom_event_button" class="btn">create event</button>
-      </form>
-    </div>
+      <input type="text" name="custom_event_name" id="custom_event_name" placeholder="Custom event name">
+      <button type="submit" id="custom_event_button" class="btn">create event</button>
+    </form>
   </div>
+</div>
 </div>
 </div>
