@@ -23,9 +23,9 @@
   "homepage": "https://github.com/FAC-Sixteen/Remindly#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "env2": "^2.2.2",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-handlebars": "^3.0.2",
     "jsonwebtoken": "^8.5.1",
     "passport": "^0.4.0",
